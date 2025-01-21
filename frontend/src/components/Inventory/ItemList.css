@@ -1,0 +1,131 @@
+/* ItemList.css */
+
+/* Container styling */
+.item-list-container {
+    height: 600px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Button styling */
+.item-list-add-button {
+    margin-bottom: 20px;
+}
+
+/* DataGrid styling */
+.MuiDataGrid-root {
+    border: none;
+    /* Optional: Remove default border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    /* Set the background color of the grid */
+    overflow: hidden;
+    /* Prevent content overflow */
+}
+
+/* DataGrid cell adjustments */
+.MuiDataGrid-cell {
+    padding: 8px;
+    white-space: nowrap;
+    /* Prevent text wrapping */
+    overflow: hidden;
+    width: 20px;
+    /* Hide overflowing text */
+    text-overflow: ellipsis;
+    /* Add ellipsis for long text */
+    border-left: 1px solid #ddd;
+    /* Add border to the left of each cell */
+    border-right: 1px solid #ddd;
+    /* Add border to the right of each cell */
+}
+
+/* DataGrid cell hover effect */
+.MuiDataGrid-cell:hover {
+    background-color: #f1f1f1;
+    /* Light background when hovering over a cell */
+}
+
+/* DataGrid cell focus styling */
+.MuiDataGrid-cell:focus {
+    outline: none;
+    /* Remove focus outline for a cleaner look */
+}
+
+/* Header cell styling */
+.MuiDataGrid-columnHeader {
+    font-weight: bold;
+    background-color: #4CAF50;
+    /* Set a green background for headers */
+    color: #fff;
+    /* White text color */
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+    /* Add border under the header */
+}
+
+/* Adjust table container to prevent excessive width */
+.MuiDataGrid-root {
+    max-width: 100%;
+    /* Ensure the table doesn't exceed its container */
+    border: 1px solid #ddd;
+    /* Add a border for cleaner separation */
+}
+
+/* Row styling */
+.MuiDataGrid-row {
+    background-color: #ffffff;
+    /* Set default background color for rows */
+    border-bottom: 1px solid #ddd;
+    /* Add a border at the bottom of each row */
+}
+
+/* Row hover effect */
+.MuiDataGrid-row:hover {
+    background-color: #f4f4f4;
+    /* Light background on row hover */
+}
+
+/* Dialog styling */
+.item-dialog {
+    max-width: 800px;
+    /* Adjust the dialog width */
+    width: 100%;
+    /* Ensure it scales with the screen size */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add subtle shadow */
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+/* Align table rows to prevent auto-sizing issues */
+.MuiDataGrid-row {
+    align-items: center;
+    /* Vertically align row content */
+}
+
+/* Prevent table layout issues */
+.MuiDataGrid-virtualScroller {
+    overflow: auto;
+    /* Ensure proper scrolling */
+}
+
+/* Ensure consistent spacing between toolbar and table */
+.MuiDataGrid-toolbarContainer {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Apply rounded corners to the entire table */
+.MuiDataGrid-root {
+    border-radius: 8px;
+}
+
+/* Border between table and dialog */
+.MuiDialog-paper {
+    border: 2px solid #ddd;
+    /* Light border around dialog */
+    border-radius: 8px;
+}
